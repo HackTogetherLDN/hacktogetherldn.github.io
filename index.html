@@ -1,104 +1,106 @@
 <!DOCTYPE html>
- <html>
- <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Getting started with Bootstrap</title>
-   <link rel="stylesheet" href="http://flip.hr/css/bootstrap.min.css">
-   <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/united/bootstrap.min.css" rel="stylesheet">  
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hack the Tower</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/united/bootstrap.min.css">  
+    <style>
+      /* Flexible iFrame for Google Map Embed*/
+      .Flexible-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
 
- </head>
- <body>
-         
- <div class="container">
-         
-   <div>
-     <h1>Hack the Tower - London hackday</h1>
-     <div class="row">
-       <div class="span5">   
-         <p>
-           A hack day for developers a to come together and work on projects together, build new apps or just discover how others are using all the shiny technology out there. There are no rules or prizes to distract you, except the infinitely valuable prize of knowledge and experience.
-         </p>
-         <p>
-           At the start of the hackday we share any project ideas we have, or technology we want to discover.  This allows everyone to get into groups and work together to create apps and learn new stuff.
-     </p>
-     </div><!--.span -->
+      .Flexible-container iframe,   
+      .Flexible-container object,  
+      .Flexible-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
 
-     <div class="span5">   
-     <div class=".pull-right">
-     <img src="images/heron-tower-city-wide-shot-small.png">
-     </div>
-    </div>
-   </div><!-- .hero-unit -->
-        
- <div class="row">
-   <div class="span3">
-     <h2>Sign up</h2>
-     <p>The next event is <strong>8th March 2014</strong>, sign up at one of the following communities on Meetup.com:</p>
-     <p><a class="btn btn-lg btn-danger" href="http://www.meetup.com/Londonjavacommunity/events/166254102/" target="_blank">London Java Community</a></p>
-     <p><a class="btn btn-lg btn-danger" href="http://www.meetup.com/london-scala/events/166253942/" target="_blank">London Scala user group</a></p>
-
-     <p><strong>Percentage of sign-ups</strong></p>
-     <div class="progress">
-       <div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
-         86%
-       </div>
-     </div>
-
-   </div><!-- .span -->
-   
-   <div class="span3">
-     <h2>Rough agenda</h2>
-      <p>The structure of the day is pretty open and follows this rough schedule:</p>
-
-      <ul>
-        <li>09.30 - 10.30 Arrive at the Salesforce office in Heron Tower</li>
-        <li>10.30 - Discuss your project ideas or technology you want to try out.</li>
-        <li>10.45 - Split into groups and get going</li>
-        <li>13.00 - Lunch time (sandwiches, salads, fruit and drinks provided)</li>
-        <li>13.30 - Keep on hacking until you have had enough</li>
-        <li>16.00 - Show off projects (optional) or keep on hacking...</li>
-      </ul>
-
-      <p>Eventually head to the pub, open air roof top resteraunt or back home to feed the kittens...</p>
-   </div><!-- .span -->
-
-
-   <div class="span3">
-     <h2>Venue Details</h2>
-
-      <p>The event is hosted by Salesforce.com at their offices in London, near Liverpool Street Station and Bank underground.</p>
-
-      <p>
-<a href="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=The+Heron+Tower,+Bishopsgate,+London&aq=0&oq=Heron&sll=52.8382,-2.327815&sspn=10.042741,26.784668&vpsrc=0&ie=UTF8&hq=&hnear=Heron+Tower,+110+Bishopsgate,+London+EC2N+4AY,+United+Kingdom&t=m&z=16&iwloc=A" target="_blank">
-Salesforce. Floor 26, Heron Tower, 110 Bishopsgate, London EC2N 4AY</a></p>
-
-   </div><!-- .span -->
-   
-   <div class="span3">
-     <h2>Contact</h2>
-     <p>If you have any queries about the event, either contact the organisers via meetup or tweet your questions to <a href="https://twitter.com/hackthetower" target="_blank">@HackTheTower</a></p>
-
-     <p>Tweet thanks for hosting this event to <a href="https://twitter.com/forcedotcom">@forcedotcom</a> or <a href="https://twitter.com/salesforce" target="_blank">@Salesforce</a></p>
-
-   </div><!-- .span6 -->
-   
-  </div><!-- .row -->
-
- <div class="row-float">
-     <div class="span5">
-      <div class="alert alert-info">
-       <h4>Free Salesforce developer environment</h4>
-         <p>Discover how to create mobile-first enterprise applications in the cloud with a <a href="http://developer.salesforce.com"  target="_blank">free developer envrionment</a> from Salesforce.  Comprehensive docs and example source code is available to help you create quickly and effectively.
-       </div> 
-   </div><!-- .span -->
-
-    <div class="span5">
-      <a href="http://developer.salesforce.com" target="_blank"><img src="images/Salesforce1.png"></a>
-   </div><!-- .span -->
-
-  </div><!-- .row -->
- </div><!-- .container -->
-     
- </body>
+      #sf-img{
+        height:89px;
+        width:89px;
+        margin-right:15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hack the Tower<small> - London hackday</small></h1>
+      <div class="jumbotron">
+        <div class="pull-right">
+          <img src="images/heron-tower-city-wide-shot-small.png">
+        </div>
+        <p>
+        A hack day for developers a to come together and work on projects together, build new apps or just discover how others are using all the shiny technology out there. There are no rules or prizes to distract you, except the infinitely valuable prize of knowledge and experience.
+        </p>
+        <small>
+        At the start of the hackday we share any project ideas we have, or technology we want to discover.  This allows everyone to get into groups and work together to create apps and learn new stuff.
+        </small>
+      </div><!-- jumbotron -->
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="alert alert-info">
+          <a class="pull-left" href="http://developer.salesforce.com" target="_blank"><img id="sf-img" src="images/Salesforce1.png"></a>
+          <h4>Free Salesforce developer environment</h4>
+          <p>Discover how to create mobile-first enterprise applications in the cloud with a <a href="http://developer.salesforce.com"  target="_blank">free developer envrionment</a> from Salesforce.  Comprehensive docs and example source code is available to help you create quickly and effectively.
+        </div> 
+      </div>
+    </div>     
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Sign up</h2>
+        <p>The next event is <time>8th March 2014</time>, sign up at one of the following communities on Meetup.com:</p>
+        <p><a class="btn btn-lg btn-danger" href="http://www.meetup.com/Londonjavacommunity/events/166254102/" target="_blank">London Java Community</a></p>
+        <p><a class="btn btn-lg btn-danger" href="http://www.meetup.com/london-scala/events/166253942/" target="_blank">London Scala user group</a></p>
+        <p><strong>Percentage of sign-ups</strong></p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">86%</div>
+        </div>
+      </div><!-- .span -->
+      <div class="col-md-3">
+        <h2>Rough agenda</h2>
+        <p>The structure of the day is pretty open and follows this rough schedule:</p>
+        <dl>
+          <dt>09.30</dt><dd> Arrive at the Salesforce office in Heron Tower</dd>
+          <dt>10.30</dt><dd>Discuss your project ideas or technology you want to try out.</dd>
+          <dt>10.45</dt><dd>Split into groups and get going</dd>
+          <dt>13.00</dt><dd>Lunch time (sandwiches, salads, fruit and drinks provided)</dd>
+          <dt>13.30</dt><dd>Keep on hacking until you have had enough</dd>
+          <dt>16.00</dt><dd>Show off projects (optional) or keep on hacking...</dd>
+        </dl>
+        <p>Eventually head to the pub, open air roof top restaurant or back home to feed the kittens...</p>
+      </div><!-- .span -->
+      <div class="col-md-3">
+        <h2>Venue Details</h2>
+        <p>The event is hosted by Salesforce.com at their offices in London, near Liverpool Street Station and Bank underground.</p>
+        <a href="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=The+Heron+Tower,+Bishopsgate,+London&aq=0&oq=Heron&sll=52.8382,-2.327815&sspn=10.042741,26.784668&vpsrc=0&ie=UTF8&hq=&hnear=Heron+Tower,+110+Bishopsgate,+London+EC2N+4AY,+United+Kingdom&t=m&z=16&iwloc=A" target="_blank">Salesforce. Floor 26, Heron Tower, 110 Bishopsgate, London EC2N 4AY</a>
+        <div class="Flexible-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2482.832814201524!2d-0.08095605!3d51.51628314999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb2be26da33%3A0x3314fbb9535c9c90!2sHeron+Tower%2C+110+Bishopsgate!5e0!3m2!1sen!2suk!4v1393185262580" width="600" height="450" frameborder="0" style="border:0"></iframe>
+        </div>
+      </div><!-- .span -->
+        <div class="col-md-3">
+          <h2>Contact</h2>
+          <p>If you have any queries about the event, either contact the organisers via meetup or tweet your questions to <a href="https://twitter.com/hackthetower" target="_blank">@HackTheTower</a></p>
+          <p>Tweet thanks for hosting this event to <a href="https://twitter.com/forcedotcom">@forcedotcom</a> or <a href="https://twitter.com/salesforce" target="_blank">@Salesforce</a></p>
+          <a class="twitter-timeline" href="https://twitter.com/HackTheTower" data-widget-id="437680261220663296">Tweets by @HackTheTower</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div><!-- .span6 -->
+      </div>
+      <div class="row">
+        <div class="footer">
+          <hr>
+        </div>
+      </div>
+    </div><!-- .container -->
+  </body>
 </html>
