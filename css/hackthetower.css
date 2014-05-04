@@ -6,9 +6,13 @@
 }
 
 #heron-tower-img{
-    height:100px;
+    height:120px;
     width:180px;
     margin-left:16px;
+}
+
+#hack-the-tower-logo{
+    margin-right:16px;
 }
 
 #website-title{
